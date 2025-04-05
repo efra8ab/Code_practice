@@ -12,4 +12,4 @@ print("Hello World")
 name = input("What is your name?: ")
 
 clear_screen()
-print(f"Hello {name}")
+print(f"Hello {name}!")
