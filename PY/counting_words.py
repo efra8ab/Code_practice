@@ -1,3 +1,6 @@
+# Ask the user to input a sentence. 
+# Count how many times each word appears and display the frequency of each word.
+
 import os
 import re
 
@@ -16,11 +19,16 @@ while True:
     listed_sentence = re.findall(r'\b\w+\b', sentence.lower())
 
     print("\nOutput: ")
-    for word in set(listed_sentence):
+    word_count = {}
+    for word in listed_sentence:
+        if word in word_count:
+            word_count[word] += 1
+        else:
+            word_count[word] = 1
         
-        n_times = listed_sentence.count(word)
-        print(f"{word}: {n_times}")
-        
+    print("Word count:")
+    for word, count in word_count.items():
+        print(f"{word}: {count}")
 
     print("Lets do another one? y/n: ")
     choice = input()

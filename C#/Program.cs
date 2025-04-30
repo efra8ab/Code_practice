@@ -11,6 +11,7 @@ class Program
 
         Console.WriteLine("1 - Even or odd counter");
         Console.WriteLine("2 - Word reverser");
+        Console.WriteLine("3 - Counting words");
 
         Console.WriteLine("Select one: ");
         string cho = Console.ReadLine()!;
@@ -26,6 +27,10 @@ class Program
             case 2:
                 Console.Clear();
                 wordReverser.Run();
+                break;
+            case 3:
+                Console.Clear();
+                countingWords.run();
                 break;
             default:
                 break;
