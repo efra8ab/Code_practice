@@ -29,3 +29,30 @@ footer {
     margin: 2rem;
 }
 
+html, body{
+    height: 100%;
+}
+
+div{
+    margin: 1px;
+    border: 1px solid red;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.navbar button {
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+}
+
+button{
+    color: brown;
+    background-color: blue;
+}
